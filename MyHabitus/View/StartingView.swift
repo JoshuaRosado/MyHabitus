@@ -8,42 +8,54 @@
 import SwiftUI
 
 struct OpeningView: View {
+    @State var nextView = false
     var body: some View {
-        ZStack{
-            RadialGradient(
-                colors: [
-                    .green.mix(with: .orange, by:600).opacity(0.2),
-                    .gray.opacity(0.1)
-                ],
-                center: .top,
-                startRadius: 500,
-                endRadius: 800
-            )
-            VStack{
-                Spacer()
-                Text("Welcome to")
-                    .foregroundStyle(.gray)
-                Text("MyHabitus")
-                    .font(
-                        .system(size: 40, weight: .black, design: .serif)
-                        
-                    )
-                    .foregroundColor(.white)
-                    .shadow(color: .black.opacity(0.4), radius: 3, x: 1, y: 1)
-                    .multilineTextAlignment(.center)
+        NavigationStack{
+            
+            
+            ZStack{
+                RadialGradient(
+                    colors: [
+                        .green.mix(with: .orange, by:600).opacity(0.2),
+                        .gray.opacity(0.1)
+                    ],
+                    center: .top,
+                    startRadius: 500,
+                    endRadius: 800
+                )
+                VStack{
+                    Spacer()
+                    Text("Welcome to")
+                        .foregroundStyle(.gray)
+                    Text("MyHabitus")
+                        .font(
+                            .system(size: 40, weight: .black, design: .serif)
+                            
+                        )
+                        .foregroundColor(.white)
+                        .shadow(color: .black.opacity(0.4), radius: 3, x: 1, y: 1)
+                        .multilineTextAlignment(.center)
                     
-                Spacer()
-                Button("Get Started"){
+                    Spacer()
+                    Button("Get Started"){
+                        nextView = true
+                        
+                    }
+                    .foregroundStyle(.gray)
+                    .padding(.bottom, 40)
+                    
+                    
                     
                 }
-                .padding(.bottom, 40)
                 
-               
-                
+            }
+            .ignoresSafeArea()
+            .navigationDestination(isPresented: $nextView) {
+                HomeView()
+                    .navigationBarBackButtonHidden(true)
             }
             
         }
-        .ignoresSafeArea()
     }
 }
 
