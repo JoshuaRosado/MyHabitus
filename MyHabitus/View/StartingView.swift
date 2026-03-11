@@ -11,8 +11,6 @@ struct OpeningView: View {
     @State var nextView = false
     var body: some View {
         NavigationStack{
-            
-            
             ZStack{
                 RadialGradient(
                     colors: [
@@ -33,7 +31,7 @@ struct OpeningView: View {
                             
                         )
                         .foregroundColor(.white)
-                        .shadow(color: .black.opacity(0.4), radius: 3, x: 1, y: 1)
+                        .shadow(color: .black.opacity(0.4), radius: 2.4, x: 1, y: 1)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
@@ -43,16 +41,14 @@ struct OpeningView: View {
                     }
                     .foregroundStyle(.gray)
                     .padding(.bottom, 40)
-                    
-                    
-                    
+
                 }
                 
             }
             .ignoresSafeArea()
             .navigationDestination(isPresented: $nextView) {
                 HomeView()
-                    .navigationBarBackButtonHidden(true)
+//                    .navigationBarBackButtonHidden(true)
             }
             
         }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A28AD8962F60B76C001B0D74 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AD8952F60B76C001B0D74 /* HomeView.swift */; };
+		A28AD8982F620324001B0D74 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28AD8972F620324001B0D74 /* BoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		A28AD8632F53D99C001B0D74 /* MyHabitusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHabitusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28AD86D2F53D99C001B0D74 /* MyHabitusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHabitusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28AD8952F60B76C001B0D74 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A28AD8972F620324001B0D74 /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -80,6 +82,7 @@
 		A28AD8492F53D998001B0D74 = {
 			isa = PBXGroup;
 			children = (
+				A28AD8972F620324001B0D74 /* BoxView.swift */,
 				A28AD8952F60B76C001B0D74 /* HomeView.swift */,
 				A28AD8542F53D998001B0D74 /* MyHabitus */,
 				A28AD8662F53D99C001B0D74 /* MyHabitusTests */,
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A28AD8962F60B76C001B0D74 /* HomeView.swift in Sources */,
+				A28AD8982F620324001B0D74 /* BoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

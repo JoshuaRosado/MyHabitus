@@ -9,8 +9,19 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).bold()
-        .padding()
+        VStack{
+            RoundedRectangle(cornerRadius: 20)
+                
+                    
+            
+            Spacer()
+            BoxView()
+            BoxView()
+            BoxView()
+            BoxView()
+        
+        }
+        .padding(.top)
     }
 }
 
