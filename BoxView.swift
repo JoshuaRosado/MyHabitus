@@ -9,10 +9,24 @@ import SwiftUI
 
 struct BoxView: View {
     var body: some View {
+        ScrollView{
+            BoxLayoutView()
+            BoxLayoutView()
+            BoxLayoutView()
+            BoxLayoutView()
+            BoxLayoutView()
+
+
+        }
+    }
+}
+
+struct BoxLayoutView: View {
+    var body: some View {
         HStack(spacing: 20){
             ZStack{
                 RoundedRectangle(cornerRadius: 35)
-                    .frame(maxWidth: 160, maxHeight: 160)
+                    .frame(width: 160, height: 160)
                 
                 
                 Text("Hello")
@@ -22,7 +36,7 @@ struct BoxView: View {
             
             ZStack{
                 RoundedRectangle(cornerRadius: 35)
-                    .frame(maxWidth: 160, maxHeight: 160)
+                    .frame(width: 160, height: 160)
                 
                 
                 Text("Hello")
